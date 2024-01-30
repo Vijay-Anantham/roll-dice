@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: rolldice
+  namespace: rolldice
+spec:
+  selector:
+    app: rolldice
+  ports:
+  - port: 8080
+    targetPort: 8080
